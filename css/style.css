@@ -47,7 +47,7 @@ a{
 .inner>form>p{
   text-align: center;
 }
- .warning{
+.warning{
    color:red;
    display:none;
 }
@@ -67,4 +67,29 @@ a{
 }
 .carousel1{
   height: 500px;
+}
+.produk{
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: auto;
+}
+.gambarProduk{
+    min-width: 100%;
+    padding-bottom: 100%;
+    background: url(../asset/img/slide/1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.captionProduk{
+    white-space:nowrap;
+    max-height: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.copyright{
+    font-size: 60%;
+    color: grey;
+}
+.footer{
+    min-height: 40px;
 }
