@@ -74,11 +74,34 @@ a{
     height: auto;
 }
 .gambarProduk{
-    min-width: 100%;
+    width: 100%;
     padding-bottom: 100%;
-    background: url(../asset/img/slide/1.jpg);
-    background-size: cover;
+    background-size: auto;
     border-radius: 10px;
+}
+#gambarProduk1{
+    background: url(../asset/img/produk/gbr1.png);
+}
+#gambarProduk2{
+    background: url(../asset/img/produk/gbr2.png);
+}
+#gambarProduk3{
+    background: url(../asset/img/produk/gbr3.jpg);
+}
+#gambarProduk4{
+    background: url(../asset/img/produk/gbr4.jpeg);
+}
+#gambarProduk5{
+    background: url(../asset/img/produk/gbr5.jpg);
+}
+#gambarProduk6{
+    background: url(../asset/img/produk/gbr6.jpg);
+}
+#gambarProduk7{
+    background: url(../asset/img/produk/gbr7.png);
+}
+#gambarProduk8{
+    background: url(../asset/img/produk/gbr8.jpg);
 }
 .captionProduk{
     white-space:nowrap;
