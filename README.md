@@ -9,11 +9,13 @@
 </ul>
 <br>
 <h3>The Requirement of Tubes</h3>
-  [x]Bootstrap<sup>30%</sup>
-  [x]5 page's<sup>30%</sup>
-  [x]Jquery Plugin<sup>20%</sup>
-  [x]JSON's Data<sup>10%</sup>
-  [x]Documentation<sup>10%</sup>
+<ol>
+  <li>[x]Bootstrap<sup>30%</sup></li>
+  <li>[x]5 page's<sup>30%</sup></li>
+  <li>[x]Jquery Plugin<sup>20%</sup></li>
+  <li>[x]JSON's Data<sup>10%</sup></li>
+  <li>[x]Documentation<sup>10%</sup></li>
+</ol>
 
 Our Regards
 
