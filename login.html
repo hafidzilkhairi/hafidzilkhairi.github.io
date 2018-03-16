@@ -37,6 +37,30 @@
 		    }
 		}
 	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tombolSignIn').click(function(){
+				username = $('#usernameSignIn').val();
+				pass = $('#passwordSignIn').val();
+				$.getJSON('user.json',function(data){
+					var login =false;
+					$.each(data,function(i,data){
+						if(data.username==username&&pass==data.password){
+							login = true;
+						}
+					})
+					if(login){
+						window.open("index.html","_self")
+					}else{
+						$('#peringatan').show(500);
+					}
+				})
+			})
+		});
+		function hilang(){
+			$('#peringatan').hide(500);
+		}
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-inverse" style="margin-top: 10%; background-color: rgb(230, 230, 230);">
@@ -92,18 +116,19 @@
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								 <form class="form" role="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+									 <div id="peringatan" style="color:rgb(250, 45, 45);display:none;">Maaf Username atau password salah</div>
 										<div class="form-group">
 											 <label class="sr-only">Username</label>
-											 <input type="text" class="form-control" placeholder="Username" required>
+											 <input id="usernameSignIn" onfocus="hilang()" type="text" class="form-control" placeholder="Username" required>
 										</div>
 										<div class="form-group">
 											 <label class="sr-only">Password</label>
-											 <input type="password" class="form-control" placeholder="Password" required>
+											 <input id="passwordSignIn" onfocus="hilang()" type="password" class="form-control" placeholder="Password" required>
                                              <div class="help-block text-right"><a href="">Lupa Passwordnya ?</a></div>
 										</div>
 										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+											 <button id="tombolSignIn" type="button" class="btn btn-primary btn-block">Sign in</button>
 										</div>
 										<div class="checkbox">
 											 <label>
