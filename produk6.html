@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="asset/jquery.min.js" type="text/javascript"></script>
+  <script src="asset/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="asset/bootstrap.min.css">
+  <script type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Welcome | Kuriak Plan</title>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      counter=0;
+      // $('#komen').append('<p><b>Hafidz : </b>Apa kabs semua</p>');
+      $('#submitKomen').click(function(){
+        counter++;
+        nama = $('#namaKomen').val();
+        isi = $('#isiKomen').val();
+        $('#namaKomen').val('');
+        $('#isiKomen').val('');
+        isi2 = '<p id="komen'+counter+'" class="col-md-9 komen">'+
+            '<b><span id="namaKomen'+counter+'">'+nama+'</span> : </b>'+
+            '<span id="isiKomen'+counter+'">'+isi+'</span>'+
+          '</p>'+
+          '<div id="tombol'+counter+'" class="col-md-3" style="cursor: pointer;">'+
+            '<button id="hapusKomen'+counter+'" onclick="edit(\''+counter+'\')" type="button" class="btn btn-primary">Edit</button>'+
+            '<button id="editKomen'+counter+'" onclick="hapus(\''+counter+'\')" type="button" class="btn btn-primary">Hapus</button>'+
+          '</div>';
+        $('#komen').append(isi2);
+      });
+    });
+    function hapus(a){
+      $('#komen'+a).remove();
+      $('#tombol'+a).remove();
+    }
+    function edit(a){
+      $('#namaKomen').val($('#namaKomen'+a).text());
+      $('#isiKomen').val($('#isiKomen'+a).text());
+      hapus(a);
+      $('html,body').animate({
+          scrollTop: $('#isiKomen').offset().top
+        }, 500);
+      $('#isiKomen').focus();
+    }
+  </script>
+</head>
+<body>
+  <!-- Menu Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">KURIAK</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Konten -->
+
+  </div>
+  <div class="container content-wrapper">
+    <div class="row">
+      <div class="col-md-3"><img class="img-fluid" src="asset\img\produk\gbr1.png" alt=""></div>
+      <div class="col-md-9 kontenProduk">
+        <div class="row">
+          <div class="col-md-10"><h1>HP-Omen 15-ce087TX</h1></div>
+          <div class="col-md-2"><h3>$1699.99<h3></div>
+        </div>
+        <h3>Spesifikasi</h3>
+        <ul>
+          <li>Intel® Core™ i7-7700HQ Processor (6M Cache, 2.80 GHz) </li>s
+          <li>16 GB DDR4 </li>s
+          <li>15.6 Inch 1920x1080 screen</li>s
+          <li>GTX 1060 6GB</li>s
+          <li>Anti-Glare Display </li>s
+          <li>1TB HDD </li>s
+          <li>Backlit keyboard </li>s
+          <li>USB 3.1 Gen 1 (1 HP Sleep and Charge), 1 Mini DisplayPort, 1 HDMI, 1 RJ-45, 1 Headphone/Microphone Combo, 1 Microphone-in </li>s
+        </ul>
+        <h3>Dominate Your Game With THE New HP OMEN</h3>
+        <p>Laptop Gaming HP Omen terbaru hadir dalam dua varian ukuran layar, yakni 15 dan 17 Inch. Seri Omen berfokus memberikan performa sempurna yang membuat Anda dapat menaklukan tiap tantangan dalam permainan. Dibanding seri pendahulunya, HP Omen generasi terbaru kini hadir dengan desain yang lebih agresif. Dimensi laptop ini pun terbilang cukup ringkas, dengan berat mulai 2.57 kg dan tebal 24.8 mm untuk varian 15 Inch dan berat 3.7 kg dan tebal 33 mm untuk varian 17 Inch. Layar berdefinisi tinggi dan refresh rate tinggi membuat Anda dapat melihat detil dengan jelas. HP Omen ditenagai Processor Quad-Core Intel® Core™ i7 generasi ke-7 dan GPU NVIDIA® GeForce® GTX™ 10 Series sehingga bisa menjadi senjata andalan Anda saat bermain Game. Fitur Single-Panel Access menyediakan akses satu panel tunggal ke HDD, SSD, dan RAM.</p>
+        <h3>Processor Quad-Core Intel® Core™ i7 7th Gen</h3>
+        <p>Laptop Gaming HP Omen 15 dipersenjatai Processor Intel® Core™ i7 generasi ke-7 sehingga membuatnya menjadi senjata Gaming yang sempurna. Processor i7 generasi 7 dengan arsitektur Kaby Lake ini menggenapi kemampuan Laptop dalam mengelola permainan berbasis VR (Virtual Reality). Processor i7 Kaby Lake seri H di dalam HP Omen 15 membawa efisiensi daya, teknologi pemrosesan yang makin canggih, dan maksimalisasi kemampuan silikon Processor untuk Clock Speed lebih tinggi dari seri pendahulunya. Berikut kelebihan Processor Intel® Core™ i7-7700HQ dibanding pendahulunya i7-6700HQ:</p>
+        <ul>
+          <li>Kecepatan di setiap Core 8% lebih tinggi</li>
+          <li>Kemampuan dalam mengolah multimedia 10% lebih cepat </li>
+          <li>Kemampuan Video Decoding atau Transcoding meningkat hingga 15%</li>
+          <li>Dilengkapi VP9 dan HEVC 10-bit Hardware Acceleration</li>
+          <li>Kemampuan memutar video 4K dengan kualitas visual HDR meningkat</li>
+          <li>Secara umum, performa Intel® Core™ i7-7700HQ 10% lebih baik.</li>
+        </ul>
+        <h3>Embrace VR Gaming</h3>
+        <p>GPU NVIDIA yakni GeForce® GTX 10 Series pada HP Omen 15 dibuat dengan arsitektur Pascal ini menjanjikan performa grafis yang 40% lebih kencang dibanding GeForce GTX seri 900. GPU GTX 10 Series dibuat dengan transistor FinFET ultra cepat dan memiliki kapasitas Bandwidth lebih besar dibanding seri 900. NVIDIA GeForce GTX 10 Series adalah GPU yang dirancang khusus untuk menyambut era VR atau Virtual Reality Gaming. GPU ini dibuat dengan teknologi generasi terbaru yang dapat hadirkan visual berdefinisi ultra tinggi, kompabilitas dengan kebutuhan ekspansi multi-monitor, dan Game dengan fitur VR. Teknologi NVIDIA GameWorks™ menghadirkan kualitas visual Gaming yang ekstra mulus dan berkualitas sinematik. Untuk mendukung VR, ada teknologi NVIDIA Ansel™ yang memungkinkan Anda bisa melihat visual Game hingga 360 derajat pada perangkat VR.</p>
+        <h3>Keep Your Cool On A Long Gaming Session</h3>
+        <p>Laptop HP Omen 15 terbaru menghadirkan performa pendinginan tinggi bahkan saat sesi Game AAA yang intensif. Sistem pendinginan laptop memastikan kinerja CPU dan GPU tetap lancar, bahkan saat pertarungan memanas. HP Omen memiliki konstruksi pendinginan berbeda sesuai seri. Ukuran dimensi kipas ganda dan jumlah pipa penyalur panas berbeda di setiap seri karena menyesuaikan dengan ukuran dan spesifikasi laptop. </p>
+        <h3>Keyboard Backlit Dragon Red</h3>
+        <p>Keyboard HP Omen dirancang untuk permainan Game profesional. Keyboard Backlit Dragon Red dengan Highlight pada tombol WASD membuat Anda dapat menekan tombol dengan presisi. Tombol dengan fitur Anti-Ghosting memungkinkan setiap ketukan tombol terdeteksi dengan baik meskipun Anda sedang menekan banyak tombol secara bersamaan. Khusus untuk seri HP Omen 17, memiliki tombol makro yang memungkinkan Anda bisa meluncurkan perintah khusus secara instan.</p>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-9"><hr></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-9">
+        <div id="komen" class="row">
+          <!-- <p id="komen1" class="col-md-9 komen">
+            <b id="namaKomen1">nama : </b>
+            <span id="isikomen1"></span>
+          </p>
+          <div class="col-md-3" style="cursor: pointer;">
+            <button onclick="edit('1')" type="button" class="btn btn-primary">Edit</button>
+            <button onclick="hapus('1')" type="button" class="btn btn-primary">Hapus</button>
+          </div> -->
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nama : </label>
+            <input id="namaKomen" type="text" class="form-control" placeholder="Masukkan Nama Anda" required>
+            <label for="exampleInputEmail1">Comment : </label>
+            <input id="isiKomen" type="text" class="form-control" placeholder="Masukkan Komentar Anda">
+          </div>
+          <button id="submitKomen" type="button" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light footer">
+    <span class="copyright">Copyright &copy;2018 Kelompok 4 Tubes WebPro</span>
+  </nav>
+</body>
+</html>
