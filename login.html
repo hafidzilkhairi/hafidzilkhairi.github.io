@@ -63,91 +63,108 @@
 	</script>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-inverse" style="margin-top: 10%; background-color: rgb(230, 230, 230);">
-  		<div class="container-fluid">
-	    <div class="navbar-text" style="color: black;">
-	      Welcome to the Future
+
+
+
+
+
+
+
+	<nav class="navbar navbar-default" style="margin-top: 10%;">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Kuriak</a>
 	    </div>
-    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      	<ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b style="color: gray;">Sign Up</b> <span class="caret"></span></a>
-			<ul id="form" class="dropdown-menu">
-				<li>
-					 <div class="row">
-							<div class="col-md-12">
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-								 	<div class="form-group">
-										<label class="sr-only">UserName</label>
-										<input type="email" class="form-control" placeholder="UserName" required>
-									</div>
-									<div class="form-group">
-										 <label class="sr-only">Alamat E-mail</label>
-										 <input type="email" class="form-control" placeholder="Alamat E-mail" required>
-									</div>
-									<div class="form-group">
-										 <label class="sr-only">Password</label>
-										 <input type="password" class="form-control" placeholder="Password" required>
-									</div>
-									<div class="form-group">
-										 <label class="sr-only">Konfirmasi Password</label>
-										 <input type="password" class="form-control" placeholder="Konfirmasi Password" required>
-									</div>
-									<div class="form-group">
-										 <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-									</div>
-									<div class="checkbox">
-										 <label>
-										 <input type="checkbox"> Saya bersedia menerima persyaratan!
-										 </label>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown nav-item">
+	          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><b style="color: gray;">Sign Up</b> <span class="caret"></span></a>
+				<ul id="form" class="dropdown-menu">
+					<li>
+						 <div class="row">
+								<div class="col-md-12">
+									 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+									 	<div class="form-group">
+											<label class="sr-only">UserName</label>
+											<input type="email" class="form-control" placeholder="UserName" required>
 										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								Kuriak
-							</div>
-					 </div>
-				</li>
-			</ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b style="color: gray;">Sign In</b> <span class="caret"></span></a>
-			<ul id="form" class="dropdown-menu">
-				<li>
-					 <div class="row">
-							<div class="col-md-12">
-								 <form class="form" role="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
-									 <div id="peringatan" style="color:rgb(250, 45, 45);display:none;">Maaf Username atau password salah</div>
 										<div class="form-group">
-											 <label class="sr-only">Username</label>
-											 <input id="usernameSignIn" onfocus="hilang()" type="text" class="form-control" placeholder="Username" required>
+											 <label class="sr-only">Alamat E-mail</label>
+											 <input type="email" class="form-control" placeholder="Alamat E-mail" required>
 										</div>
 										<div class="form-group">
 											 <label class="sr-only">Password</label>
-											 <input id="passwordSignIn" onfocus="hilang()" type="password" class="form-control" placeholder="Password" required>
-                                             <div class="help-block text-right"><a href="">Lupa Passwordnya ?</a></div>
+											 <input type="password" class="form-control" placeholder="Password" required>
 										</div>
 										<div class="form-group">
-											 <button id="tombolSignIn" type="button" class="btn btn-primary btn-block">Sign in</button>
+											 <label class="sr-only">Konfirmasi Password</label>
+											 <input type="password" class="form-control" placeholder="Konfirmasi Password" required>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
 										</div>
 										<div class="checkbox">
 											 <label>
-											 <input type="checkbox"> Biarkan saya Masuk!
+											 <input type="checkbox"> Saya bersedia menerima persyaratan!
 											 </label>
-										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								Kuriak
-							</div>
-					 </div>
-				</li>
-			</ul>
-        </li>
-      	</ul>
-    	</div>
-  		</div>
-		</nav>
+											</div>
+									 </form>
+								</div>
+								<div class="bottom text-center">
+									Kuriak
+								</div>
+						 </div>
+					</li>
+				</ul>
+	        </li>
+	        <li class="dropdown nav-item">
+	          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><b style="color: gray;">Sign In</b> <span class="caret"></span></a>
+				<ul id="form" class="dropdown-menu">
+					<li>
+						 <div class="row">
+								<div class="col-md-12">
+									 <form class="form" role="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
+										 <div id="peringatan" style="color:rgb(250, 45, 45);display:none;">Maaf Username atau password salah</div>
+											<div class="form-group">
+												 <label class="sr-only">Username</label>
+												 <input id="usernameSignIn" onfocus="hilang()" type="text" class="form-control" placeholder="Username" required>
+											</div>
+											<div class="form-group">
+												 <label class="sr-only">Password</label>
+												 <input id="passwordSignIn" onfocus="hilang()" type="password" class="form-control" placeholder="Password" required>
+	                                             <div class="help-block text-right"><a href="">Lupa Passwordnya ?</a></div>
+											</div>
+											<div class="form-group">
+												 <button id="tombolSignIn" type="button" class="btn btn-primary btn-block">Sign in</button>
+											</div>
+											<div class="checkbox">
+												 <label>
+												 <input type="checkbox"> Biarkan saya Masuk!
+												 </label>
+											</div>
+									 </form>
+								</div>
+								<div class="bottom text-center">
+									Kuriak
+								</div>
+						 </div>
+					</li>
+				</ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
 		<div class="container-fluid" style="background-color: rgba(255,255,255,.8); border-radius: 4px;">
 			<div class="cl-md-3" style="float: left;"><img src="sUmpC5mXp-6.png" style="margin-left: 5px; height: 60%; width: 60%"></div>
 			<div class="cl-md-6" style="text-align: right;">
@@ -155,10 +172,10 @@
 				<p>Abduh Salam </p>
 				<p>Hafidzil Khairi</p>
 				<p>Muhammad Zaki Ramadhan</p>
-				<p>Jayanti</p>
+				<p>Rahmatian Jayanti</p>
 			</div>
 		</div>
-		<div class="container-fluid text-center" style="margin-top: 90px; background-color: rgb(230, 230, 230); border: 1px solid black; border-radius: 4px;">
+		<div class="container-fluid text-center" style="margin-top: 90px; background-color: white; border-radius: 4px;">
 			<p style="margin-top: 5px;">Copyright @ 2018 - All Right Reserved.Design by Kelompok 4</p>
 		</div>
 </body>
